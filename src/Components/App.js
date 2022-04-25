@@ -4,6 +4,8 @@ import Assetlist from "./Asset/Assetlist";
 import Assetdetail from "./Asset/Assetdetail";
 import '../styles/App.css';
 import { Routes, Route, Link } from "react-router-dom";
+// import store from "../Redux/store";
+// import { demo } from "../Redux/Actions/Action";
 // import { json } from "express";
 
 class App extends Component {
@@ -24,18 +26,13 @@ class App extends Component {
         } 
        ]
      };
-     const data = this.state.dataAsset.userid;
-     const jd = JSON.stringify(data)
-     console.log(jd)
-  }
-   
-    // Newdata =JSON.stringify(dataAsset)
-    // Jdata= JSON.parse(Newdata)
     
-   
-  //  const [id,assetname,buyday,price,supplier,warranty,location,userid] = dataAsset
-    render() {      
-      // console.log(Jdata.id)
+  }
+       render() {      
+      // const {dataAsset} = this.state
+      // const dataRedux =store.getState(store)
+      // console.log(dataRedux.demo)
+      // store.dispatch(demo)
         return (   
         <Routes>
           <Route exact  path="/" element={<AssetCategory />} />
