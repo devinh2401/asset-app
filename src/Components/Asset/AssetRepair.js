@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Row, Col, Container, Table} from 'react-bootstrap';
 import { Routes, Route, Link } from "react-router-dom";
 import AssetMove from './AssetMove';
-import AssetRepair from './AssetRepair';
+// import AssetRepair from './AssetRepair';
 
-class Assetdetail extends Component {
+class AssetRepair extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -54,24 +54,22 @@ class Assetdetail extends Component {
                             <ul className='pn-list'> 
                             
                                 <li className='tab-detail active' onClick={this.showTable}><Link to ="#">Thông tin tài sản</Link> </li>
-                                <li className='tab-detail'><Link to ="/AssetMove">Lịch sử điểu động</Link> </li>
+                                <li className='tab-detail'><Link to ="/AssetRepair">Lịch sử điểu động</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetRepair">Lịch sử sửa chữa</Link> </li>
                                 <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>
                                 
                             </ul>
-                            <button className="btn-primary" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới thông tin tài sản</button>
+                            <button className="btn-primary" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới lịch sử sửa chữa tài sản</button>
                             <form className='form-tbl'>
                             <Table striped bordered hover>
                                     <thead>
                                         <tr>
                                         <th>#</th>
-                                        <th>Mô tả</th>
-                                        <th>Đơn vị</th>
-                                        <th>Số lượng</th>
-                                        <th>Giá trị ban đầu</th>
-                                        <th>Thời gian bảo hành (tháng)</th>
-                                        <th>Ghi chú</th>
-                                                                              
+                                        <th>người sửa chữa</th>
+                                        <th>Nhà cung cấp</th>
+                                        <th>ngày ửa chữa</th>
+                                        <th>chi phí sửa chữa</th>
+                                        <th>Nội dung sửa chữa</th>                                                                           
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -81,7 +79,6 @@ class Assetdetail extends Component {
                                         <td>Chiếc</td>
                                         <td>2</td>
                                         <td>500.000</td>
-                                        <td>24</td>
                                         <td>New</td>
                                         </tr>
                                         <tr>
@@ -90,7 +87,6 @@ class Assetdetail extends Component {
                                         <td>Chiếc</td>
                                         <td>2</td>
                                         <td>500.000</td>
-                                        <td>24</td>
                                         <td>New</td>
                                         </tr>
                                         <tr>
@@ -99,7 +95,6 @@ class Assetdetail extends Component {
                                         <td>Chiếc</td>
                                         <td>2</td>
                                         <td>500.000</td>
-                                        <td>24</td>
                                         <td>New</td>
                                         </tr>
                                     </tbody>
@@ -115,4 +110,4 @@ class Assetdetail extends Component {
     }
 }
 
-export default Assetdetail;
+export default AssetRepair;
