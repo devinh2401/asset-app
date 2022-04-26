@@ -5,17 +5,17 @@ import { Routes, Route, Link } from "react-router-dom";
 import AssetRepair from './AssetRepair';
 
 class AssetMove extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isActive: 'true', 
-            showTable:'true'
-        }
-        this.showTable = this.showTable.bind(this);
-      }
-      showTable() {
-        console.log('Click ok');
-      }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         isActive: 'true', 
+    //         showTable:'true'
+    //     }
+    //     this.showTable = this.showTable.bind(this);
+    //   }
+    //   showTable() {
+    //     console.log('Click ok');
+    //   }
          
     render() {
         return (
@@ -53,7 +53,7 @@ class AssetMove extends Component {
                         <div className='panel-list'>
                             <ul className='pn-list'> 
                             
-                                <li className='tab-detail active' onClick={this.showTable}><Link to ="#">Thông tin tài sản</Link> </li>
+                                <li className='tab-detail active'><Link to ="/Assetdetail">Thông tin tài sản</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetMove">Lịch sử điểu động</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetRepair">Lịch sử sửa chữa</Link> </li>
                                 <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>

@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Table} from 'react-bootstrap';
 import { Routes, Route, Link } from "react-router-dom";
-import AssetMove from './AssetMove';
-import AssetRepair from './AssetRepair';
+// import AssetMove from './AssetMove';
+// import AssetRepair from './AssetRepair';
 
 class Assetdetail extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isActive: 'true', 
-            showTable:'true'
-        }
-        this.showTable = this.showTable.bind(this);
-      }
-      showTable() {
-        console.log('Click ok');
-      }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         isActive: 'true', 
+    //         showTable:'true'
+    //     }
+    //     this.showTable = this.showTable.bind(this);
+    //   }
+    //   showTable() {
+    //     console.log('Click ok');
+    //   }
          
     render() {
         return (
@@ -52,11 +52,11 @@ class Assetdetail extends Component {
                     <div className="panel-info">
                         <div className='panel-list'>
                             <ul className='pn-list'> 
-                            
-                                <li className='tab-detail active' onClick={this.showTable}><Link to ="#">Thông tin tài sản</Link> </li>
+                                <li className='tab-detail active' ><Link to ="#">Thông tin tài sản</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetMove">Lịch sử điểu động</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetRepair">Lịch sử sửa chữa</Link> </li>
                                 <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>
+                              
                                 
                             </ul>
                             <button className="btn-primary" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới thông tin tài sản</button>
