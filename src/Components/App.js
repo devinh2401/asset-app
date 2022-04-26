@@ -8,7 +8,8 @@ import { Routes, Route, Link } from "react-router-dom";
 // import { demo } from "../Redux/Actions/Action";
 
 import AssetMove from "./Asset/AssetMove";
-import AssetRepair from "./Asset/AssetRepair"
+import AssetRepair from "./Asset/AssetRepair";
+import Demo from "./Asset/demo";
 // import { json } from "express";
 
 class App extends Component {
@@ -43,6 +44,7 @@ class App extends Component {
           <Route  path="/Assetdetail" element={<Assetdetail />} />
           <Route  path="/AssetMove" element={<AssetMove />} />
           <Route  path="/AssetRepair" element={<AssetRepair />} />
+          <Route  path="/Demo" element={<Demo />} />
           
         </Routes>
         );
