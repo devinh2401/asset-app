@@ -43,11 +43,8 @@ class Assetdetail extends Component {
                                 <p className="name-detail"> Ngày mua:</p>                   
                                 <p className="name-detail"> Thời gian bảo hành:</p>                   
                                 <p className="name-detail"> Ghi chú:</p> 
-                            </div>
-                                             
-                            
+                            </div> 
                         </div>
-                        
                     </div> 
                     <div className="panel-info">
                         <div className='panel-list'>
@@ -55,12 +52,82 @@ class Assetdetail extends Component {
                                 <li className='tab-detail active' ><Link to ="#">Thông tin tài sản</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetMove">Lịch sử điểu động</Link> </li>
                                 <li className='tab-detail'><Link to ="/AssetRepair">Lịch sử sửa chữa</Link> </li>
-                                <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>
-                              
-                                
+                                <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>  
                             </ul>
-                            <button className="btn-primary" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới thông tin tài sản</button>
-                            <form className='form-tbl'>
+                            <button className="btn-primary" data-bs-toggle="modal" data-bs-target="#formsp" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới thông tin tài sản</button>
+                                <div className="modal fade" id="formsp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div className="modal-dialogg">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div className="modal-body">
+                                                <div className='formSm'>
+                                                    <div className='row'>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                    </div>
+                                                    <div className='row'>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                    </div>
+                                                    <div className='row'>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label>Tên Sp</label>
+                                                            <input type="text"></input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="modal-footer">
+                                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" className="btn btn-primary">Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <form NameName='form-tbl'>
                             <Table striped bordered hover>
                                     <thead>
                                         <tr>
@@ -70,8 +137,7 @@ class Assetdetail extends Component {
                                         <th>Số lượng</th>
                                         <th>Giá trị ban đầu</th>
                                         <th>Thời gian bảo hành (tháng)</th>
-                                        <th>Ghi chú</th>
-                                                                              
+                                        <th>Ghi chú</th>                                                                              
                                         </tr>
                                     </thead>
                                     <tbody>
