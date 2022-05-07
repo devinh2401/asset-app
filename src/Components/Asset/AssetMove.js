@@ -59,7 +59,72 @@ class AssetMove extends Component {
                                 <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>
                                 
                             </ul>
-                            <button className="btn-primary" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới lịch sử điều động</button>
+                            <button className="btn-primary" data-bs-toggle="modal" data-bs-target="#formsp" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới lịch sử điều động</button>
+                            <div className="modal fade" id="formsp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                                    <div className="modal-dialog modal-lg" >
+                                        <div className="modal-content" style={{width:"900px", height:"400px"}}>
+                                            <div className="modal-header">
+                                                <h5 className="modal-title" id="">Thông tin tài sản</h5>
+                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div className="modal-body">
+                                                <div className='formSm'>
+                                                    <div className='row' style={{marginBottom:"30px"}}>
+                                                        <div className='col-sm-3' >
+                                                            <label id ="label-modal">Vị trí </label>
+                                                        <select className='form-select' >
+                                                                <option selected> selected</option>
+                                                                <option value={1}> value1</option>
+                                                                <option value={2}> value 2</option>
+                                                                <option value={3}> value3</option>
+                                                        </select>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label id ="label-modal">Người quản lý</label>
+                                                            <select className='form-select' >
+                                                                <option selected> selected</option>
+                                                                <option value={1}> value1</option>
+                                                                <option value={2}> value 2</option>
+                                                                <option value={3}> value3</option>
+                                                        </select>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                            <label id ="label-modal"> Ngày điều chuyển</label>
+                                                            <input id="input-modal" type="date"></input>
+                                                        </div>
+                                                        <div className='col-sm-3'>
+                                                        <label id ="label-modal"> Phiếu bàn giao tài sản</label>
+                                                            <select className='form-select' >
+                                                                    <option selected> selected</option>
+                                                                    <option value={1}> value1</option>
+                                                                    <option value={2}> value 2</option>
+                                                                    <option value={3}> value3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div className='row'>
+                                                        <div className='col-sm-3'>
+                                                            <label id ="label-modal">Trạng thái sử dụng</label>
+                                                            <select className='form-select'>
+                                                                <option value={1}> Sử dụng </option>
+                                                                <option value={2}> Không sử dụng </option>
+                                                            </select>
+                                                        </div>
+                                                        <div className='col-sm-6'>
+                                                            <label id ="label-modal" for="textarea">Ghi chú</label>
+                                                            <textarea id="input-modal" style={{width:"400px", height:"85px"}}></textarea>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="modal-footer">
+                                                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Hủy</button>
+                                                <button type="button" className="btn btn-primary">Thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             <form className='form-tbl'>
                             <Table striped bordered hover>
                                     <thead>

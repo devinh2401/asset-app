@@ -55,74 +55,57 @@ class Assetdetail extends Component {
                                 <li className='tab-detail'><Link to ="#">Lịch sử Kiểm định</Link> </li>  
                             </ul>
                             <button className="btn-primary" data-bs-toggle="modal" data-bs-target="#formsp" style={{textTransform:'uppercase' , borderRadius:'3px', padding:'2px', marginLeft:'3px'}}> Thêm mới thông tin tài sản</button>
-                                <div className="modal fade" id="formsp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div className="modal-dialogg">
-                                        <div className="modal-content">
+                                <div className="modal fade" id="formsp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                                    <div className="modal-dialog modal-lg" >
+                                        <div className="modal-content" style={{width:"900px", height:"400px"}}>
                                             <div className="modal-header">
-                                                <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                <h5 className="modal-title" id="">Thông tin tài sản</h5>
                                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div className="modal-body">
                                                 <div className='formSm'>
-                                                    <div className='row'>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                    <div className='row' style={{marginBottom:"30px"}}>
+                                                        <div className='col-sm-3' >
+                                                            <label id ="label-modal">Mô tả </label>
+                                                            <input id="input-modal" type="text"></input>
                                                         </div>
                                                         <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                            <label id ="label-modal">Số lượng</label>
+                                                            <input id="input-modal"  type="text"></input>
                                                         </div>
                                                         <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                            <label id ="label-modal"> Giá trị bạn đầu</label>
+                                                            <input id="input-modal" type="text"></input>
                                                         </div>
                                                         <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
-                                                    </div>
-                                                    <div className='row'>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                        <label id ="label-modal"> Đơn vị</label>
+                                                        <select name="" id="" class="form-control chosen-select" style={{border:"1px solid #dfe8f1" , outline:"none"}}>
+                                                            <option value="">---</option>
+                                                            <option value="1">bộ</option>
+                                                            <option value="4">m2</option>
+                                                            <option value="5">m</option>
+                                                            <option value="6">chiếc</option>
+                                                            <option value="7">cái</option>
+                                                         
+					                                  </select>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
                                                         <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                            <label id ="label-modal">Thời gian bảo hành(tháng)</label>
+                                                            <input id="input-modal" type="text"></input>
                                                         </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
+                                                        <div className='col-sm-6'>
+                                                            <label id ="label-modal" for="textarea">Ghi chú</label>
+                                                            <textarea id="input-modal" style={{width:"400px", height:"85px"}}></textarea>
                                                         </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
-                                                        <div className='col-sm-3'>
-                                                            <label>Tên Sp</label>
-                                                            <input type="text"></input>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" className="btn btn-primary">Understood</button>
+                                                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Hủy</button>
+                                                <button type="button" className="btn btn-primary">Thêm</button>
                                             </div>
                                         </div>
                                     </div>
